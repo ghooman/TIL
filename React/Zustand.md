@@ -31,7 +31,7 @@ function Counter() {
 
 ## 2. 프로젝트 실습 분석
 
-### ✅ Counter Store (`useCounterStore.js`)
+### ✅ [Counter Store (useCounterStore.js)](https://github.com/ghooman/react-zustand-basic/blob/main/src/store/useCounterStore.js)
 
 - **미들웨어**: `devtools`와 `persist`를 변수에 순차 재할당하여 적용
 - **상태 업데이트 패턴**:
@@ -41,13 +41,13 @@ function Counter() {
   - 상태 리셋: 스토어 내부 `reset: () => set({ count: 1 })`
   - 저장소 삭제: 컴포넌트에서 `useCounterStore.persist.clearStorage()` 호출
 
-### ✅ Todo Store (`useTodoStore.js`)
+### ✅ [Todo Store (useTodoStore.js)](https://github.com/ghooman/react-zustand-basic/blob/main/src/store/useTodoStore.js)
 
 - **스토리지**: `getStorage: () => sessionStorage`로 세션 스토리지 사용
 - **불변성**: `todos: [...state.todos, { ... }]`로 스프레드 연산자 사용
 - **CRUD 로직**: `filter`로 삭제, `map`으로 완료 상태(`isCompleted: true`) 갱신
 
-### ✅ User Store (`useUserStore.js`)
+### ✅ [User Store (useUserStore.js)](https://github.com/ghooman/react-zustand-basic/blob/main/src/store/useUserStore.js)
 
 - **비동기 통신**: `axios`로 `async/await` 기반 API 호출
 - **데이터 처리**: `response.data`를 그대로 상태에 반영
@@ -81,5 +81,5 @@ function Counter() {
 
 | 구분 | 파일 |
 |------|------|
-| Store | useCounterStore.js / useTodoStore.js / useUserStore.js |
-| Component | Counter.js / TodoList.js |
+| Store | [useCounterStore.js](https://github.com/ghooman/react-zustand-basic/blob/main/src/store/useCounterStore.js) / [useTodoStore.js](https://github.com/ghooman/react-zustand-basic/blob/main/src/store/useTodoStore.js) / [useUserStore.js](https://github.com/ghooman/react-zustand-basic/blob/main/src/store/useUserStore.js) |
+| Component | [Counter.js](https://github.com/ghooman/react-zustand-basic/blob/main/src/components/Counter.js) / [TodoList.js](https://github.com/ghooman/react-zustand-basic/blob/main/src/components/TodoList.js) |
